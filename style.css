@@ -9,6 +9,64 @@ body {
   font-family: 'Work Sans', sans-serif;
   min-height: 4000px;
 }
+.corner-decor {
+  position: absolute;  /* Membuat gambar posisi relatif terhadap parent */
+  top: 10px;  /* Sesuaikan posisi gambar dari atas */
+  right: 10px;  /* Sesuaikan posisi gambar dari kanan */
+  width: 120px;  /* Sesuaikan ukuran gambar */
+  opacity: 0.6;  /* Set opacity untuk transparansi */
+  z-index: 1;  /* Pastikan gambar muncul di atas konten */
+}
+
+#Tanggal {
+  margin-top: 30px; /* Menambahkan margin atas pada section */
+}
+
+/* Mengatur ukuran maksimal carousel */
+.carousel-container {
+  max-width: 350px; /* Lebar maksimal pada desktop */
+  margin: auto;
+}
+
+/* Gambar di dalam carousel responsif */
+.carousel-inner img {
+  border-radius: 10px; /* Menambahkan sudut melengkung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.date-counter {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  opacity: 0; /* Awalnya tersembunyi */
+  transform: translateY(20px); /* Posisi awal di bawah */
+  transition: all 0.6s ease-in-out; /* Animasi smooth */
+}
+
+.date-counter.visible {
+  opacity: 1; /* Muncul */
+  transform: translateY(0); /* Posisi normal */
+}
+
+.day {
+  font-size: 4rem;
+  color: #ff007f; /* Warna angka */
+  animation: pop-up 0.5s ease-in-out;
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
 
 .hero::before {
   content: '';
@@ -123,23 +181,6 @@ body {
 
 .home .couple img {
   width: 100%;
-}
-
-.home .heart {
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  display: flex;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) translateY(65px);
-}
-
-.home .heart i {
-  margin: auto;
-  color: var(--pink);
 }
 
 .info {
@@ -438,6 +479,7 @@ footer li {
   }
 }
 
+
 /* tablet */
 @media (max-width: 768px) {
   html {
@@ -462,12 +504,24 @@ footer li {
     width: 140px;
     height: 140px;
   }
+
+  .carousel-container {
+    max-width: 90%; /* Lebar menyesuaikan layar ponsel */
+  }
+
+  .carousel-inner img {
+    border-radius: 8px;
+  }
 }
 
 /* mobile phone */
 @media (max-width: 576px) {
   html {
     font-size: 60%;
+  }
+
+  .navbar {
+    display: none !important;
   }
 
   .simply-countdown > .simply-section {
@@ -492,4 +546,32 @@ footer li {
   .timeline li .timeline-panel::after {
     top: 31px;
   }
+
+  .carousel-container {
+    max-width: 50%; /* Lebar menyesuaikan layar ponsel */
+  }
+
+  .carousel-inner img {
+    border-radius: 7px;
+  }
+  .corner-decor {
+    width: 70px; /* Ukuran gambar lebih kecil di layar kecil */
+  }
+  .date-text {
+    font-size: 50px; /* Ukuran teks lebih kecil */
+  }
+}
+
+@media (max-width: 768px) {
+  .corner-decor {
+    width: 40px; /* Ukuran gambar lebih kecil di layar kecil */
+  }
+}
+
+.line {
+  width: 100%; /* Garis lebih pendek di layar kecil */
+}
+
+.date-text {
+  font-size: 50px; /* Ukuran teks lebih kecil */
 }
