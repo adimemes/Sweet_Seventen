@@ -22,22 +22,24 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 
+<!-- Hero Section -->
 <body>
-
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
-    <main>
-      <h4>Kepada <span>Kakak, </span></h4>
-      <h1>Sweet Seventen</h1>
-      <p>Akan mengadakan perayaan ulang tahun ke-17 dalam:</p>
-      <div class="simply-countdown"></div>
-      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()">Click Here 🤗</a>
-    </main>
-
+    <main data-aos="slide-up" data-aos-delay="200">
+      <h2>Dear <span style="color: #ff69b4; font-weight: bold;"></span> You're Invited</h2>
+      <p>to</p>
+      <h1>Sweet Seventeen Nopita</h1><br>
+      <a href="#home" class="btn btn-lg mt-4" onClick="enableScroll()"><i class="bi bi-envelope"></i> Lihat Undangan</a>
+    </main> 
   </section>
+<!-- End Hero Section -->
 
+<!-- Navbar Section -->
   <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
     <div class="container">
       <a class="navbar-brand" href="#">Novita</a>
@@ -55,140 +57,263 @@
             <a class="nav-link" href="#home">Home</a>
             <a class="nav-link" href="#info">Info</a>
             <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#rsvp">RSV</a>
           </div>
         </div>
       </div>
     </div>
   </nav>
+<!-- End Nav Section -->
 
+<!-- Home Section -->
   <section id="home" class="home">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
+        <div class="col-md-8 text-center" data-aos="fade-up">
           <h2>Sweet Seventeen</h2>
           <!-- <h3>Diselenggarakan pada tanggal berapa ?? di Denpasar, Bali.</h3> -->
-          <p>“Save the date! 🎉 Perayaan Sweet Seventeenth aku akan diadakan pada 28 November 2024 di Denpasar, Bali. Jangan lupa catat tanggalnya ya, aku nggak sabar buat ngerayain hari spesial ini bareng kamu! 🌸✨”</p>
+          <p style="margin-bottom: 10px;">“Save the date! 🎉 Perayaan Sweet Seventeenth aku akan diadakan pada 28 November 2024 di Denpasar, Bali. Jangan lupa catat tanggalnya ya, aku nggak sabar buat ngerayain hari spesial ini bareng kamu! 🌸✨”</p>
         </div>
       </div>
       <div class="row couple text-center justify-content-center align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-3">
             <div class="row flex-column align-items-center">
-                <div class="col-12">
-                    <img src="./img/contoh 1.jpeg" alt="Novita" class="img-responsive rounded-circle" style="width: 200px;">
+                <div class="col-12"  data-aos="fade-right">
+                  <img src="./img/contoh 1.jpeg" alt="Novita" class="img-responsive rounded" style="width: 200px; padding: 10px; border: 5px solid #ff69b4;">
                 </div>
-                <div class="col-12 mt-3">
-                    <h3>Novita</h3>
-                    <p>"Hai, aku Novita! Dengan penuh suka cita, aku mau mengundang kamu untuk datang ke perayaan Sweet Seventeenth aku. Kehadiran kamu bakal bikin hari spesial ini makin berkesan buat aku dan keluarga. Jadi, jangan sampai kelewatan ya!"</p>
-                </div>
+                <div class="col-12 mt-2">
+                  <h3 data-aos="slide-up" data-aos-delay="0">Novita</h3>
+                  <h4 data-aos="slide-up" data-aos-delay="200">Ni Nyoman Novita</h4>
+                  <h4 data-aos="slide-up" data-aos-delay="400">Anak Ke-Dua Dari Pasangan</h4>
+                  <h3 data-aos="slide-up" data-aos-delay="600">Ni Nyoman</h3> <span>&</span>
+                  <h3 data-aos="slide-up" data-aos-delay="800">Wayan</h3>
+                </div>                
             </div>
         </div>
-    </div>
-    
     </div>
   </section>
+  <!-- End Home Section -->
 
-
-  <section id="info" class="info">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
-          <h2>Informasi Acara</h2>
-          <p class="alamat">Alamat: Garuda Wisnu Kencana. <br> Jl. Raya Uluwatu
-            Badung</p>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7405991503474!2d115.16283499678953!3d-8.810422800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd244cf54e1dec7%3A0x1988663e064f5a51!2sTaman%20Budaya%20Garuda%20Wisnu%20Kencana!5e0!3m2!1sid!2sid!4v1732275209524!5m2!1sid!2sid"
-            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-          <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk
-            membuka peta</a>
-          <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak
-            ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.</p>
-        </div>
+<!-- Info Section -->
+<section id="info" class="info position-relative" style="position: relative;">
+  <!-- Gambar dekoratif di pojok -->
+  <img src="./img/bunga.png" alt="decorative" class="corner-decor">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2 data-aos="zoom-in">Informasi Acara</h2>
       </div>
-
-      <div class="row justify-content-center mt-4">
-        <div class="col-md-5 col-10">
-          <div class="card text-center text-bg-light">
-            <div class="card-header">Acara</div>
-            <div class="card-body">
-              <div class="row justify-content-center">
-                <div class="col-md-6">
-                  <i class="bi bi-clock d-block"></i>
-                  <span>11.00 - selesai</span>
-                </div>
-                <div class="col-md-6">
-                  <i class="bi bi-calendar3 d-block"></i>
-                  <span>Jumat, 22 November 2024</span>
-                </div>
+    </div>
+    <div class="row justify-content-center mt-4" data-aos="fade-up">
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light">
+          <div class="card-header">Acara</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>11.00 - selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Jumat, 22 November 2024</span>
               </div>
             </div>
-            <div class="card-footer">
-              Saat acara Sweet Seventeen diharapkan untuk kondusif menjaga Kenyamanan dalam Acara.
-            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://goo.gl/maps/R9seweCadg9MNyox5" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="gallery" class="gallery">
+<!-- End Info Section -->
+
+<!-- Tanggal Section -->
+<section id="Tanggal" class="home" style="padding: 20px; position: relative; overflow: hidden; background-color: #fff;">
+  <!-- Carousel dengan ukuran responsif -->
+  <div class="carousel-container" data-aos="zoom-out">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000" data-bs-wrap="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/contoh 1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/contoh 1.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/contoh 1.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Tanggal dengan format vertikal -->
+  <div class="date-container" style="text-align: center; margin-top: 20px;">
+    <div class="date-counter" style="text-align: center;" id="date-section">
+      <span class="month">DESEMBER</span>
+      <div class="day" id="day-counter">01</div>
+      <span class="year">2024</span>
+    </div>        
+  </div>
+
+  <div data-aos="zoom-in" data-aos-delay="0" class="simply-countdown" style="margin-top: 35px;"></div>
+
+  <div class="col-12 mt-2 text-center">
+    <p style="margin-top: 35px;" data-aos="zoom-out" data-aos-delay="200" >"Save the date! 🎉 Perayaan Sweet Seventeenth aku akan diadakan pada 28 November 2024 di Denpasar, Bali. Jangan lupa catat tanggalnya ya, aku nggak sabar buat ngerayain hari spesial ini bareng kamu! 🌸✨”</p>
+  </div>
+  <div class="col-12 mt-2 text-center" style="padding-top: 20px;" data-aos="zoom-out" data-aos-delay="400">  
+    <h2>See You !!!</h2>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2 data-aos="slide-up" data-aos-delay="0">Novita's Journey</h2>
+        <p data-aos="fade-up" data-aos-delay="200">"17 tahun penuh canda, tawa, dan pertumbuhan. Rayakanlah setiap momen berharga dalam perjalanan hidup menuju kedewasaan."</p>
+      </div>
+    </div>
+
+    <!-- Galeri dengan grid responsif -->
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
+      <div class="col">
+        <a href="./img/contoh 3.jpeg" data-toggle="lightbox" data-caption="Novita" data-gallery="mygallery">
+          <img data-aos="fade-right" data-aos-delay="0" src="./img/contoh 3.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./img/contoh 2.jpeg" data-toggle="lightbox" data-caption="Novita" data-gallery="mygallery">
+          <img data-aos="fade-down" data-aos-delay="200" src="./img/contoh 2.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./img/contoh 4.jpeg" data-toggle="lightbox" data-caption="Novita" data-gallery="mygallery">
+          <img data-aos="fade-left" data-aos-delay="400" src="./img/contoh 4.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+      <div class="col">
+        <a href="./img/contoh 5.jpeg" data-toggle="lightbox" data-caption="Novita" data-gallery="mygallery">
+          <img data-aos="fade-up" data-aos-delay="800" src="./img/contoh 5.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- End Gallery Section -->
+
+  <!-- Gift -->
+<section id="gifts" class="gifts">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span data-aos="zoom-in" data-aos-delay="0">ungkapan tanda kasih</span>
+        <h2 data-aos="zoom-in" data-aos-delay="200">Kirim Hadiah</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center text-center">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li data-aos="fade-up" data-aos-delay="400" class="list-group-item">
+            <div class="fw-bold">BCA</div>
+            XXXXXXXX - XXXXXXX
+          </li>
+          <li data-aos="fade-up" data-aos-delay="600" class="list-group-item">
+            <div class="fw-bold">MANDIRI</div>
+            XXXXXXXX - XXXXXXX
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Gift END -->
+
+  <!-- RSV Section -->
+<section id="rsvp" class="rsvp" data-aos="zoom-in">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <h2>Novita's Journey</h2>
-          <p>"17 tahun penuh canda, tawa, dan pertumbuhan. Rayakanlah setiap momen berharga dalam perjalanan hidup menuju kedewasaan."</p>
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
         </div>
       </div>
 
-      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-        <div class="col mt-3">
-          <a href="./img/contoh 3.jpeg" data-toggle="lightbox" data-caption="Novita" data-gallery="mygallery">
-            <img src="./img/contoh 3.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
+        id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
         </div>
-        <div class="col mt-3">
-          <a href="./img/contoh 2.jpeg" data-toggle="lightbox" data-caption="Novita" 
-            data-gallery="mygallery">
-            <img src="./img/contoh 2.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+          </div>
         </div>
-        <div class="col mt-3">
-          <a href="./img/contoh 4.jpeg" data-toggle="lightbox" data-caption="Novita" 
-            data-gallery="mygallery">
-            <img src="./img/contoh 4.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Pilih salah satu</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
         </div>
-        <div class="col mt-3">
-          <a href="./img/contoh 5.jpeg" data-toggle="lightbox" data-caption="Novita" 
-            data-gallery="mygallery">
-            <img src="./img/contoh 5.jpeg" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
+        <div class="col-12" style="margin-top: 35px;">
+          <button class="btn btn-primary">Kirim</button>
         </div>
-        <!-- <div class="col mt-3">
-          <a href="https://picsum.photos/id/304/1200/768" data-toggle="lightbox" data-caption="Nama Yang Seventeen"
-            data-gallery="mygallery">
-            <img src="https://picsum.photos/id/304/300/400" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
-        </div>
-        <div class="col mt-3">
-          <a href="https://picsum.photos/id/305/1200/768" data-toggle="lightbox" data-caption="Nama Yang Seventeen"
-            data-gallery="mygallery">
-            <img src="https://picsum.photos/id/305/300/400" alt="Nama Yang Seventeen" class="img-fluid w-100 rounded">
-          </a>
-        </div> -->
+      </form>
+    </div>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-6">
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+          var disqus_config = function () {
+            this.page.url = 'https://adimemes.github.io/Sweet_Seventen/';  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'https://adimemes.github.io/Sweet_Seventen/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+
+          (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://sweet-seventeen-2.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
       </div>
     </div>
-  </section>
+</section>
+<!-- End RSV Section -->
 
-  <footer>
+<!-- Footer -->
+  <footer data-aos="zoom-in">
     <div class="container">
       <div class="row">
         <div class="col text-center">
           <small class="block">&copy; Seventeen Card. All Rights Reserved.</small>
           <small class="block">Design by <a href="https://www.instagram.com/kdksubagia_/" target="_blank">@adimemes</a>.</small>
-
           <ul class="mt-3">
             <li><a href="https://www.instagram.com/kdksubagia_/" target="_blank"><i class="bi bi-instagram"></i></a></li>
             <li><a href=" https://wa.me/6281246153582" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
@@ -197,7 +322,9 @@
       </div>
     </div>
   </footer>
+<!-- End Footer -->
 
+<!-- Audio -->
   <div id="audio-container">
     <audio id="song" autoplay loop>
       <source src="audio/Taylor Swift - Starlight (Taylor's Version) (Lyric Video).mp3" type="audio/mp3">
@@ -207,8 +334,9 @@
       <i class="bi bi-disc"></i>
     </div>
   </div>
+<!-- End Audio -->
 
-
+<!-- Srcipt -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
@@ -218,9 +346,9 @@
   <script>
     simplyCountdown('.simply-countdown', {
       year: 2024, // required
-      month: 11, // required
-      day: 28, // required
-      hours: 8, // Default is 0 [0-23] integer
+      month: 12, // required
+      day: 6, // required
+      hours: 18, // Default is 0 [0-23] integer
       words: { //words displayed into the countdown
         days: { singular: 'hari', plural: 'hari' },
         hours: { singular: 'jam', plural: 'jam' },
@@ -316,12 +444,74 @@
   <script>
     const urlParams = new URLSearchParams(window.location.search);
     const nama = urlParams.get('n') || '';
-    const pronoun = urlParams.get('p') || 'Kakak';
-    const namaContainer = document.querySelector('.hero h4 span');
+    const pronoun = urlParams.get('p') || '';
+    const namaContainer = document.querySelector('.hero h2 span');
     namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
     document.querySelector('#nama').value = nama;
   </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const dateSection = document.getElementById("date-section"); // Section tanggal
+  const dayCounter = document.getElementById("day-counter"); // Elemen angka tanggal
+
+  // Fungsi untuk menjalankan animasi counter
+  function startCounter() {
+    let counter = 1; // Mulai dari angka 1
+    const target = 6; // Angka tujuan (06)
+    const interval = 300; // Waktu antar perubahan angka
+
+    // Set interval untuk update angka
+    const countUp = setInterval(() => {
+      if (counter <= target) {
+        dayCounter.textContent = counter < 10 ? `0${counter}` : counter; // Format dua digit
+        counter++;
+      } else {
+        clearInterval(countUp); // Hentikan animasi jika sudah selesai
+      }
+    }, interval);
+  }
+
+  let hasAnimated = false; // Flag untuk memastikan animasi hanya dilakukan sekali
+
+  // Intersection Observer untuk memantau elemen
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        dateSection.classList.add("visible"); // Menambahkan animasi fade-in
+
+        // Jika animasi belum pernah dijalankan, jalankan animasi
+        if (!hasAnimated) {
+          hasAnimated = true;
+          startCounter(); // Mulai animasi counter
+        }
+      } else {
+        // Reset flag saat elemen keluar dari viewport
+        hasAnimated = false;
+        dayCounter.textContent = "01"; // Reset tanggal ke angka awal
+        dateSection.classList.remove("visible"); // Menghilangkan animasi fade-in
+      }
+    });
+  });
+
+  // Pantau elemen date-counter
+  observer.observe(dateSection);
+});
+
+
+
+
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 2000, // Durasi animasi (dalam ms)
+      once: false,     // Animasi hanya berjalan satu kali saat elemen terlihat
+    });
+  });
+</script>
+
+
 </body>
 
 </html>
